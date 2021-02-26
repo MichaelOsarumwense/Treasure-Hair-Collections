@@ -1,0 +1,380 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "brd101234567",
+      "name": "Texas Twisted Original Braids",
+      "description": "Dark long original braids, newly twisted from texas to give you an exotic look",
+      "price": 80.99,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://imgur.com/fZFqpPg.jpg",
+      "image": "1brd.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "bzh101234567",
+      "name": "Top Notch Brazillian Hair",
+      "description": "Top of the roof brazillian hair, hundred percent human hair with 5 years warranty",
+      "price": 60.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "https://imgur.com/tUWIB6J.jpg",
+      "image": "1bzh.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "drd101234567",
+      "name": "Royal Blonde Dreads",
+      "description": "A blonde looking dreads to give you the viking vibes you have always wanted, home grown and 100 precent natural",
+      "price": 200.99,
+      "category": 3,
+      "rating": 4.7,
+      "image_url": "https://imgur.com/eLkvkny.jpg",
+      "image": "1drd.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "dry101234567",
+      "name": "Classic Hair Dryer",
+      "description": "A beand new dryer, fit for purpose and long last witha sturdy firm grasp",
+      "price": 80.99,
+      "category": 7,
+      "rating": 3,
+      "image_url": "https://imgur.com/u8qjwHy.jpg",
+      "image": "1dry.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "hbh101234567",
+      "name": "Elegant Human Bob Hair",
+      "description": "Durable and elegant human bob hair with 10 years warranty. Suitable for outfits",
+      "price": 240.99,
+      "category": 1,
+      "rating": 5,
+      "image_url": "https://imgur.com/hT4WnyJ.jpg",
+      "image": "1hbh.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "hsp101234567",
+      "name": "The Wax Oily Hair Spray",
+      "description": "The full wax oily hair spray is designed to give your hair just the right amount of moist and suppleness and shine it needs.",
+      "price": 30.99,
+      "category": 9,
+      "rating": 4.7,
+      "image_url": "https://imgur.com/QzGzmj9.jpg",
+      "image": "1hsp.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "nar101234567",
+      "name": "Curly Hairs",
+      "description": "Our new collection of curly hairs is meant comes with a 5 years warranty and is 100 percent human hair",
+      "price": 59,
+      "category": 8,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/kYqdBl5.jpg",
+      "image": "1nar.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "wig101234567",
+      "name": "Platinum Golden Wigs",
+      "description": "The new platinum golden wig is made of 10 percent morrocan hair, it is durable and can last a life time",
+      "price": 600.99,
+      "category": 6,
+      "rating": 4.5,
+      "image_url": "https://imgur.com/tzScIIr.jpg",
+      "image": "1wig.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "wvn101234567",
+      "name": "Weavon Luxtra",
+      "description": "This new weavon luxtra is a luxury collection from italy, meant to give you a sophisticated look and feel",
+      "price": 300.99,
+      "category": 4,
+      "rating": 4.7,
+      "image_url": "https://imgur.com/glxclRr.jpg",
+      "image": "1wvn.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "brd201234567",
+      "name": "Cruise Braids",
+      "description": "Cruise braids with sturdy texture, glossy and classy",
+      "price": 90.99,
+      "category": 5,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/FTIqkg5.jpg",
+      "image": "2brd.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "bzh201234567",
+      "name": "Luxury Brazillian Hair",
+      "description": "Stylish black-trim luxury brazillian hair for your comfort and everyday use",
+      "price": 29.99,
+      "category": 2,
+      "rating": 3,
+      "image_url": "https://imgur.com/weeEOrh.jpg",
+      "image": "2bzh.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "drd201234567",
+      "name": "Duga Dreads",
+      "description": "The Duga dread is a synthetic interwoven mixed lush of hair that is guaranteed to last a very long time with great comfort",
+      "price": 19.99,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "https://imgur.com/DbyAefq.jpg",
+      "image": "2drd.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "dry201234567",
+      "name": "Silicon Hair Dryer",
+      "description": "The Silicon hair dryer comes fitted with a 1000kw of rechargeable battereries that can last 16 hours.",
+      "price": 170,
+      "category": 7,
+      "rating": 3.2,
+      "image_url": "https://imgur.com/luMuTDZ.jpg",
+      "image": "2dry.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "hbh201234567",
+      "name": "Premium Human Bob Hair",
+      "description": "Fitted with a wig cap, the premium human bob hair is designed for comfort and and to give you that luxury look.",
+      "price": 100.99,
+      "category": 1,
+      "rating": 4.7,
+      "image_url": "https://imgur.com/nHppsFG",
+      "image": "2hbh.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "hsp201234567",
+      "name": "Red Hair Spray",
+      "description": "The Red Hair Spray is made of cedar wood oil and is designed to keep your haid soft and glowing all day long",
+      "price": 42.99,
+      "category": 9,
+      "rating": 4.8,
+      "image_url": "https://imgur.com/XhgZJSw.jpg",
+      "image": "2hsp.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "nar201234567",
+      "name": "Frontal Hair",
+      "description": "This exquisite frontal hair is of top notch quality andhas new arrived from france. It is durable and long lasting.",
+      "price": 60.99,
+      "category": 8,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/9j257Ov.jpg",
+      "image": "2nar.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "wig201234567",
+      "name": "Brown Royal Wig",
+      "description": "The Brown Royal wig is a part of the limited wig collection with a ten years warranty for your comfort and class",
+      "price": 500.99,
+      "category": 6,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/eBrhYit.jpg",
+      "image": "2wig.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "wvn201234567",
+      "name": "Weavon Curls",
+      "description": "The weavon curls is the dream come true, hair with so much class, comfort and rich texture. A must have for good hair lovers.",
+      "price": 190.99,
+      "category": 4,
+      "rating": 4.8,
+      "image_url": "https://imgur.com/WoHhWYm.jpg",
+      "image": "2wvn.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "brd301234567",
+      "name": "Afro Long Braids",
+      "description": "The Afro Long Braids is the most in demand braids, with very long atachments, this braid is unique and the quality is likw no other.",
+      "price": 90.99,
+      "category": 5,
+      "rating": 5,
+      "image_url": "https://imgur.com/oT66i1c.jpg",
+      "image": "3brd.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "bzh301234567",
+      "name": "Brazillian Luxury Attachment",
+      "description": "The Brazillian Luxury attachment is a must have, the texture is smooth and color is long lasting.",
+      "price": 280.99,
+      "category": 2,
+      "rating": 4.7,
+      "image_url": "https://imgur.com/jGqpZEF.jpg",
+      "image": "3bzh.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "drd301234567",
+      "name": "Cane Dreads",
+      "description": "The classic, trusted quality of romanian cane dreads is legendary. These dreads are believed to have a life span of 100 years durability",
+      "price": 200.99,
+      "category": 3,
+      "rating": 4.3,
+      "image_url": "https://imgur.com/TLb5iaY.jpg",
+      "image": "3drd.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "dry301234567",
+      "name": "Star Hair Dryer",
+      "description": "The Star Hair Dryers are known for its durability and long lasting quality with a warranty of 5 years.",
+      "price": 76.99,
+      "category": 7,
+      "rating": 5,
+      "image_url": "https://imgur.com/MXqG6dC.jpg",
+      "image": "3dry.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "hbh301234567",
+      "name": "Crop Human Bob Hair",
+      "description": "The human Bob Hair  is a simple but classic haur for the elegant. It boast of durability and class",
+      "price": 210.99,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://imgur.com/QYplEuS.jpg",
+      "image": "3hbh.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "hsp301234567",
+      "name": "Croft Hair Spray",
+      "description": "The Croft Hair Spray, with its unique folarion is designed to give you hair the glossy classy look.",
+      "price": 82,
+      "category": 9,
+      "rating": 3.8,
+      "image_url": "https://imgur.com/s3OIg1I.jpg",
+      "image": "3hsp.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "nar301234567",
+      "name": "Ponny Tail Weavons",
+      "description": "This soft and exotic hair is a one of kind, it comes with comfort and style. Esy to wear and fit for all purpose",
+      "price": 100.99,
+      "category": 8,
+      "rating": 3,
+      "image_url": "https://imgur.com/QT3ctde.jpg",
+      "image": "3nar.jpg"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "wig301234567",
+      "name": "Dark Royal Wig",
+      "description": "The Dark Royal is one of the three exclusives of its kind. The dark royal represents class and wealth.",
+      "price": 241.99,
+      "category": 6,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/6KfQdcU.jpg",
+      "image": "3wig.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "wvn301234567",
+      "name": "Hand Made Weavon",
+      "description": "Our limited edition Hand Made Weavon is a top end weavon with a 15 years waranty duration",
+      "price": 400.99,
+      "category": 4,
+      "rating": 4.4,
+      "image_url": "https://imgur.com/D6TKtLR.jpg",
+      "image": "3wvn.jpg"
+    }
+  }
+]
