@@ -1,1 +1,1 @@
-web: gunicorn django_Treasure_Hair_Collections.wsgi:application
+web: gunicorn Treasure_Hair_Collections.wsgi:application
