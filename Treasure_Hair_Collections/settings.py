@@ -27,7 +27,8 @@ SECRET_KEY = '6i2a0=jr)@(shjddfwe((=20+&0^5rp=wxdzy_!gwdh^-3bn)g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['treasures-hair-collections.herokuapp.com/']
+ALLOWED_HOSTS = ['treasures-hair-collections.herokuapp.com']
+
 
 # Application definition
 
