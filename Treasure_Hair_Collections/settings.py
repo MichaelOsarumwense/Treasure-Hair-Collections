@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'profiles',
 
     # external_apps
-    'crispy_forms'
+    'crispy_forms',
     'storages',
 ]
 
