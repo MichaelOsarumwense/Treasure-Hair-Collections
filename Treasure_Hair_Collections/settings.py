@@ -15,7 +15,7 @@ from pathlib import Path
 import os
 import dj_database_url
 
-development =  os.environ.get('DEVELOPMENT', False)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,13 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = 'DEVELOPMENT' in os.environ
 
-if development:
-    ALLOWED_HOSTS = ['localhost']
-else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
-
+ALLOWED_HOSTS = ['treasures-hair-collections.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -55,7 +51,6 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
 
-    #external_apps
     'crispy_forms',
 ]
 
@@ -126,16 +121,16 @@ WSGI_APPLICATION = 'Treasure_Hair_Collections.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if development:
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
-    }
-else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 
 # Password validation
