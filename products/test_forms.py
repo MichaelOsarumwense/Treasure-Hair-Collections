@@ -7,4 +7,3 @@ class TestItemForm(TestCase):
     def test_products_form(self):
         form = Product('categories', {})
         self.assertFalse(form.image)
-
