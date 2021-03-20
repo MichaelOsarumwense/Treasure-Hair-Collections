@@ -208,11 +208,11 @@ input[name='q']::placeholder {
 }
 
 .footer-top {
-    background: linear-gradient(black, #1c1c1d);
+    background: linear-gradient(to bottom, black, #1c1c1d);
 }
 
 .main-footer {
-    background: linear-gradient(#1c1c1d, black);
+    background: linear-gradient(to top, black, #1c1c1d);
 }
 
 .author-link:link,
