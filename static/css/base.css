@@ -102,6 +102,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.button-black {
+    background: linear-gradient(var(--black), var(--lightblack));
+    color: var(--white);
+    border: 1px solid var(--black);
+    font-family: var(--sawarabi-mincho);
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -172,6 +179,51 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* ------------------------------ footer */
+.media-icons {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 5px;
+    padding: 3px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.media-icons:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.icon-footer-container,
+.icon-footer-container:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-top {
+    background: linear-gradient(black, #1c1c1d);
+}
+
+.main-footer {
+    background: linear-gradient(#1c1c1d, black);
+}
+
+.author-link:link,
+.author-link:visited {
+    color: var(--white);
+    transition: all .2s;
+}
+
+.author-link:hover {
+    color: var(--lightgreen);
+    text-decoration: none;
 }
 
 /* -------------------------------- Media Queries */
@@ -274,6 +326,10 @@ input[name='q']::placeholder {
         right: 0;
         left: 0;
         z-index: 1030;
+    }
+
+        .container {
+        max-width: 74rem !important;
     }
 
     .header-container {
