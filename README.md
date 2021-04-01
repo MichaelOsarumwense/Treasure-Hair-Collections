@@ -100,7 +100,7 @@ Mock-ups were created early on in this project.
 
 I've used [draw.io](https://draw.io/) Wireframes during the Scope Plane part of the design and planning process for this project.
 
-All of my wireframes for this project can be found [here](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/tree/master/documents/frames/)
+All of my wireframes for this project can be found [here](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/tree/master/documents/)
 
 ------------------------
 
@@ -340,6 +340,40 @@ Desktop - Firefox v.67
 
 
 ## Deployment
+
+### Gitpod - How to run on Gitpod
+
+This Project was actually developed using gitpod. It is easy and fast to run this project on gitpod, all you need to do is:
+
+* Install **[Gitpod](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki?hl=en)** Plugin on your browser.
+* Navigate to **[this](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections.git)** Project repo on github.
+* Click on the gitpod green Buttton just beside the clone tab.
+* When you are navigated to gitpod, login or sign Up if a new user and start the project work space.
+* To allow you to access all functionality on the site locally, create free accounts with the following services: - Stripe - AWS and set up an S3 bucket.
+* On the terminal run the following command " pip3 install -r requirements.txt ".
+* Set up the following environment variables on gitpod by going to settings and adding them below.
+
+
+        - SECRET_KEY (Django generated secrete)
+
+        - STRIPE_PUBLIC_KEY (retrieve from your newly created account)
+
+        - STRIPE_WH_SECRET (your stripe webhook secret)
+
+        - STRIPE_SECRET_KEY (retrieve from your stripe account)
+
+        - DEVELOPMENT (set value to TRUE)
+
+* Next, you'll need to make migrations to create the database schema:
+      * python manage.py makemigrations
+      * python manage.py migrate
+* Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your admin username and password:
+
+     * python manage.py createsuperuser
+     * Assign an admin username,email,and secure password.
+* Now you can run the program locally with the following command:
+
+    * python manage.py runserver
 
 ### How to run this project locally
 

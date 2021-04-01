@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content%}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
+{% block content%}
 <!-- 404 Error handler, for easy navigation if a user enters incorrect URL-->
 <div class="container-fluid  error-container">
     <div class="row ">
         <div class="col-12 text-center">
             <h1 class="uppercase font-weight-bold error-heading"> 
-                <span class="text-black"> 404</span>&nbsp;error
+                <span class="text-black"> 404</span>&nbsp;ERROR
             </h1>
             <h3 class="mt-5 error-sub-heading">
                 Oops! Looks like you got lost...

@@ -140,6 +140,27 @@ html {
      overflow-x: hidden;
      overflow-y: auto;
 }
+
+/*Error pages*/
+.error-heading {
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    font-family: sawarabi-mincho;
+    text-shadow: 4px 4px 4px	#D3D3D3;
+    color: #fa8072;
+}
+
+.error-sub-heading {
+    font-size: 1.7rem;
+}
+
+.error-container {
+    padding-top: 5rem;
+    background: white;
+    height: 60%!important;
+    background-size: cover;
+}
+
 /* ------------------------------ footer */
  .media-icons {
      font-size: 1.5rem;
