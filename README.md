@@ -1,13 +1,14 @@
 # [Treasures Hair Collections](https://treasures-hair-collections.herokuapp.com/)
 
+[![Build Status](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections.svg?branch=master)](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections)  
+
 Milestone Project - 4
+The live website can be viewed [here](https://treasures-hair-collections.herokuapp.com/)      
+<img src="https://imgur.com/bMpHq8D.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
 
 This is the last milestone project for the Fullstack Web Developer course with Code Institute. The aim of the project is to showcase my skills learnt throughout this course. 
 
 Throughout this project I have used [Python](https://www.python.org/), a high-end programming language along with [Django](https://www.djangoproject.com/), a python framework.
-
-The deployed site can be found at [Treasures Hair Collections](https://treasures-hair-collections.herokuapp.com/)
-<img src="https://imgur.com/bMpHq8D.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
 
 ----------
 
@@ -48,7 +49,7 @@ The deployed site can be found at [Treasures Hair Collections](https://treasures
 
 ## UX
 
-This project is part of my Code Institute Full Stack Software Development studies, specifically the Full Stack Frameworks module. The purpose of the project was to create a website for an online watch shop where the company can displays their products for the customers. This website is designed in a simple and efficient way for the customers to have a smooth and pleasant shopping experience.
+This project is part of my Code Institute Full Stack Software Development studies, specifically the Full Stack Frameworks module. The purpose of this project was to create an online hair shop where anyone can simply purchase good quality hair and products comfortably using their phones or PC. This website is designed in a simple and efficient way for the customers to have a smooth and pleasant shopping experience.
 
 ## User Stories
 
@@ -232,6 +233,7 @@ At the bootom of the footer is copyright information.
   * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3) -  Used to add styles to the HTML.
   * [jQuery 3.4.1](https://code.jquery.com/jquery/) - Used as the primary JavaScript functionality.
   * [Stripe](https://stripe.com/docs/api) - Used to make secure payments.
+  * [Travis](https://travis-ci.org/) - Used for continuous integration.
   * [AWS S3 Bucket](https://aws.amazon.com/) - Used to store images entered into the database.
   * [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - To enable creation, configuration and management of AWS S3.
   * [Font Awsome](https://www.bootstrapcdn.com/fontawesome/) - Used for icons in the website.
@@ -269,6 +271,10 @@ How to run coverage
     * Open the newly created htmlcov directory in the root of your project folder.
     * Open the index.html file inside it.
     * Run the file in the browser to see the output.
+
+### Travis
+
+Travis was used for continuous integration testing. At the top of this Readme file you can see that the website passes the Travis test. The Travis Documentation provides all the info needed to set it up.
 
 ## Manual Testing
 
@@ -314,7 +320,7 @@ Desktop - Firefox v.67
 -------------------------
 ### GitHub Repository
 
-1. Created a repository in GitHub called: “stephyraju/ticktockwatches” https://github.com/MichaelOsarumwense/Treasure_Hair_Collections
+1. Created a repository in GitHub called: michaelOsarumwense/Treasure_Hair_Collections” https://github.com/MichaelOsarumwense/Treasure_Hair_Collections
 
 2. Initialised git from the terminal using Git Bash:
 
