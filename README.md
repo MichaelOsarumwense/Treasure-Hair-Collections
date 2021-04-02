@@ -40,6 +40,7 @@ Throughout this project I have used [Python](https://www.python.org/), a high-en
 
 **6. [Deployment](#deployment)**
 
+  * [Gitpod](#how-to-run-on-gitpod)
   * [Local Deployment](#how-to-run-this-project-locally)
   * [Heroku Deployment](#heroku-deployment)
 
@@ -346,8 +347,7 @@ Desktop - Firefox v.67
 
 
 ## Deployment
-
-### Gitpod - How to run on Gitpod
+### How to run on Gitpod
 
 This Project was actually developed using gitpod. It is easy and fast to run this project on gitpod, all you need to do is:
 
