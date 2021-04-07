@@ -1,6 +1,6 @@
 # [Treasures Hair Collections](https://treasures-hair-collections.herokuapp.com/)
 
-[![Build Status](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections.png?branch=master)](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections)  
+[![Build Status](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections.svg?branch=master)](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections)  
 
 Milestone Project - 4
 The live website can be viewed [here](https://treasures-hair-collections.herokuapp.com/)      
