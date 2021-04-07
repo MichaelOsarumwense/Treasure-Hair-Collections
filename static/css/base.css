@@ -19,6 +19,9 @@ html {
  .logo-font {
      text-transform: uppercase;
 }
+#logo-font {
+    margin-top: 0.8rem;
+}
  .main-logo-link {
      width: fit-content;
 }

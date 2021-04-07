@@ -8,14 +8,12 @@ class Test1(TestCase):
         product = Product(name="Test product",
                           description="Test description",
                           price=2.10)
-        self.assertTrue(product.name)
+        self.assertEquals(product.name, "Test product")
 
     def test_model_image(self):
-        product = Product(name="Test product",
-                          description="Test description",
-                          price=2.10)
-        self.assertFalse(product.image)
+        product = Product(image="https://imgur.com/fZFqpPg.jpg")
+        self.assertEquals(product.image, "https://imgur.com/fZFqpPg.jpg")
 
     def test_category(self):
-        category = Category('name', '')
-        self.assertFalse(category.name)
+        category = Category('name', 'wigs')
+        self.assertEquals(category.name, "wigs")
