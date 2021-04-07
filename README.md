@@ -377,6 +377,10 @@ This Project was actually developed using gitpod. It is easy and fast to run thi
 
      * python manage.py createsuperuser
      * Assign an admin username,email,and secure password.
+* Run the following command to populate the the database with products and category data:
+
+    * python3 manage.py loaddata categories
+    * python3 manage.py loaddata products
 * Now you can run the program locally with the following command:
 
     * python manage.py runserver
@@ -444,6 +448,10 @@ python manage.py runserver.
 
      * python manage.py createsuperuser
      * Assign an admin username,email,and secure password.
+* Run the following command to populate the the database with products and category data:
+
+    * python3 manage.py loaddata categories
+    * python3 manage.py loaddata products
 * Now you can run the program locally with the following command:
 
     * python manage.py runserver
