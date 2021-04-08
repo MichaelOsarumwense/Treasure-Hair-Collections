@@ -511,8 +511,8 @@ All the product details, images and the contents for the services and policies a
 **Tutorials**
 
 * [Python Django Tutorial by Corey Schafer](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-
 * The [Django documentation](https://devdocs.io/django~1.11/)
+* The [Code Institute Full Stack Framework with Django](https://learn.codeinstitute.net/)
 
 ### Acknowledgement
 The tutors, mentors and support staff at Code Institute
