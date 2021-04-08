@@ -14,5 +14,6 @@ class TestProfileForms(TestCase):
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
+            'default_country': "US",
             })
         self.assertTrue(form.is_valid())
