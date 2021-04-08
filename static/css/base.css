@@ -200,6 +200,9 @@ html {
      color: var(--lightgreen);
      text-decoration: none;
 }
+#footer-div{
+    margin-top: 15px;
+}
 /* -------------------------------- Media Queries */
 /* Slightly larger container on xl screens */
  @media (min-width: 1200px) {
