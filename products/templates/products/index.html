@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!--Title-Images-->
+<section class ="homepage-imgs">
+    <div class="container-fluid title-container">
+        <div class="row">
+            <div class="col-md-6 title-img">
+                <img class="img-fluid" src="{% static 'img/newArrivals.jpg' %}" alt="new arrivals">
+                <a class="btn btn-primary text-uppercase" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
+            </div>
+            <div class="col-md-6 title-img">
+                <img class="img-fluid" src="{% static 'img/deals.png' %}" alt="deals">
+                <a class="btn btn-primary text-uppercase" href="{% url 'products' %}?category=hair_spray,hair_dryers">Deals</a>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!--Promotion banner -->
+<section class = "container-fluid promotion-banner">
+    <div class = "row">
+      <div class = "col-12 text-center text-white banner">
+        <i class ="pt-1 fas fa-truck" style="color:rgb(0, 128, 129);"></i>
+        <p class = ban-text>Free Next Day Delivery Over $100</p>
+      </div>
+    </div>
+</section>
+
+<!--Product-showcase featured watches-->
+<section class="products-showcase">
+    <div class="container featured-products">
+        <div class="row mx-auto justify-content-center">
+           <div class="col-12 pb-5">
+                <h3>Shop Our Latest Collection</h3>
+            </div>
+             <div class="card-deck"> 
+                {% for product in featured_products %}
+                 <div class="col-xs-12 col-md-6 col-lg-3 mx-auto featured-card">
+                    <div class="card" style="width: 17rem;">
+                         <a href="{% url 'product_detail' product.id %}"  class="product-image">
+                             <img class="card-img"src="{{MEDIA_URL}}{{product.image}}" class="card-img-top product-image" alt="{{product.name}}" />
+                            </a>
+                            <div class="overlay"></div>
+                             {% if product.bestseller %}
+                             <div class="product-label text-center">Bestseller</div>
+                             {% endif %}
+                             <div class="card-body product-details">
+                             <h6 class="card-title product-name"><a href="{% url 'product_detail' product.id %}"  class="product-title">{{ product.name }}</a></h6>
+                         
+                             <p class="product-price">$ {{ product.price }}</p>
+                         </div>
+                         <form method="post" action="{% url 'add_to_bag' product.id %}">
+                         {% csrf_token %}
+                         <div class="input-group add-cart">
+                             <input class="input-add-checkout"  name="quantity" type="number" min="1" max="999" class="form-control" value="1" required>
+                             <span class="input-group-btn">
+                                 <button class="btn btn-dark rounded-0 btn-sm" type="submit">Add to Cart</button>
+                             </span>
+                         </div>
+                     </form>
+                     </div>
+                 </div>
+           {% endfor %} 
+          </div>
+        </div>
+     </div>    
+ </section>  
+ 
+ <!--Watch shop Promotion-->  
+<section>
+ <div class="jumbotron jumbotron-fluid shop-promo">
+    <div class="container text-center">
+      <h3 class="display-4">TH-Collections</h3>
+      <p class="lead"><strong>Europess Largest Online Hair Shop</strong></p>
+      <p>Welcome to Treasures Hair Collections - We are proud to stock a wide selection of hair and a great selection of products to go with it, from sought-after brands original 100% human hair to, braids, royal wigs and many more at our online store.</p>
+    </div>
+  </div>
+</section>
+
+<!--Top Brands-->
+<section class= "top-brands">
+    <div class="container my-3">
+      <div class="row mx-auto my-auto p-5">
+        <div class="col-12 pb-5">
+            <h3>Top Collecions</h3>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">    
+          <div class="card mt-2 brand-card">    
+            <a href="{% url 'products' %}?category=brazilian_hair">
+            <img class="card-img-top pt-2" src="{% static 'img/brazillian.jpg' %}" alt={{product.name}}></a>
+             <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Brazillian</h5>
+            </div>      
+          </div>
+        </div>
+       
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="card mt-2 brand-card">
+            <a href="{% url 'products' %}?category=human_bob_hair">
+            <img class="card-img-top pt-2" src="{% static 'img/bobhair.jpg' %}" alt="Card image cap"></a>
+            <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Human</h5>
+            </div>
+          </div>
+       </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="card mt-2 brand-card">
+            <a href="{% url 'products' %}?category=wigs">
+            <img class="card-img-top pt-2" src="{% static 'img/wig.jpg' %}" alt="Card image cap"></a>
+            <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Wigs</h5>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+          <div class="card mt-2 brand-card">
+            <a href="{% url 'products' %}?category=weavon">
+            <img class="card-img-top pt-2" src="{% static 'img/weavon.jpg' %}" alt="Card image cap"></a>
+            <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Weavons</h5>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+          <div class="card mt-2 brand-card">
+            <a href="{% url 'products' %}?category=braids">
+            <img class="card-img-top pt-2" src="{% static 'img/braids.jpg' %}" alt="Card image cap"></a>
+            <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Braids</h5>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="card mt-2 brand-card">
+            <a href="{% url 'products' %}?category=dreads">
+            <img class="card-img-top pt-2" src="{% static 'img/dreads.jpg' %}" alt="Card image cap"></a>
+            <div class="overlay"></div>
+            <div class="card-body">
+              <h5 class="card-title text-center pt-2">Dreads</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+
+ </div>
+
+ <div class="text-center py-3">
+    <a href="{% url 'products' %}" class="btn btn-dark rounded-0 btn-sm btn-home-products " >Show all collections</a>
+</div>
+</section>
+
+{% endblock %}

@@ -10,7 +10,11 @@
       "category": 5,
       "rating": 4.6,
       "image_url": "https://imgur.com/fZFqpPg.jpg",
-      "image": "1brd.jpg"
+      "image": "1brd.jpg",
+      "featured": "True",
+      "bestseller": "False"
+
+
     }
   },
   {
@@ -108,7 +112,9 @@
       "category": 6,
       "rating": 4.5,
       "image_url": "https://imgur.com/tzScIIr.jpg",
-      "image": "1wig.jpg"
+      "image": "1wig.jpg",
+      "featured": "True",
+      "bestseller": "True"
     }
   },
   {
@@ -136,7 +142,9 @@
       "category": 5,
       "rating": 4.4,
       "image_url": "https://imgur.com/FTIqkg5.jpg",
-      "image": "2brd.jpg"
+      "image": "2brd.jpg",
+      "featured": "True",
+      "bestseller": "False"
     }
   },
   {
@@ -234,7 +242,9 @@
       "category": 6,
       "rating": 4.4,
       "image_url": "https://imgur.com/eBrhYit.jpg",
-      "image": "2wig.jpg"
+      "image": "2wig.jpg",
+      "featured": "True",
+      "bestseller": "True"
     }
   },
   {

@@ -72,6 +72,20 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+def view_index(request):
+    """ Renders home page with 4 random featured products
+        in featured listing section """
+
+    featured_products = Product.objects.filter(featured=True).order_by('?')[:4]
+    bestseller = Product.objects.filter(bestseller=True)
+    context = {
+        'featured_products': featured_products,
+        'bestseller': bestseller,
+        'category': 'All products'
+    }
+    return render(request, "products/index.html", context)
+
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
