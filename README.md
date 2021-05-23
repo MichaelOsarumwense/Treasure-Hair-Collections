@@ -462,7 +462,7 @@ python manage.py runserver.
 
 ### Heroku Deployment
 
-    To deploy TickTock  to heroku, take the following steps:
+    To deploy to heroku, take the following steps:
 
 1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
 
