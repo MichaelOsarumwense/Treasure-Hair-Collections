@@ -36,7 +36,7 @@ def view_contact(request):
                 "Message: " +
                 message,
                 'from@example.com',
-                ['stephyraju@gmail.com'],
+                ['michael.oosarumwense@gmail.com'],
                 fail_silently=False,
             )
             messages.success(request,
