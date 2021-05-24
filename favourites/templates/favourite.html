@@ -23,12 +23,16 @@
         <div class="row justify-content-center">
             {% for product in favourite_products %}
             <div class= "col-4 mb-5">
+                <a href="{% url 'product_detail' product.id %}">
                 <img class="mx-auto text-center"src="{{MEDIA_URL}}{{product.image}}" alt="Product-image" height="100" width="100"></img>
+                </a>
             </div>
             <div class="col-8 mb-5">
                 <div class="row">
                     <div class="col-10">
+                        <a style="color: black;" href="{% url 'product_detail' product.id %}">
                         <h4>{{ product.name }}</h4>
+                        </a>
                     </div>
                 </div>
             </div>
