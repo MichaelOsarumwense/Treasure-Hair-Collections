@@ -80,6 +80,11 @@ padding-bottom: 80px;
      color: white !important;
 }
 
+ .shop-now-button:hover, .shop-now-button:active, .shop-now-button:focus, .btn-black:hover, .btn-black:active, .btn-black:focus {
+     background: #222;
+     color: white;
+}
+
  .text-black {
      color: #000 !important;
 }
@@ -313,11 +318,9 @@ padding-bottom: 80px;
   .btn-hover {
     font-weight: 500;
     font-size: 1.1em;
-    color: grey;
+    color: white;
   }
-  .btn-hover:hover {
-      color: black;  
-  }
+
   
 #breadcrumbs a {
     text-decoration: none;
@@ -325,11 +328,11 @@ padding-bottom: 80px;
 }
 #breadcrumbs a:hover {
     text-decoration: none;
-    color: black;
+    
 }
 /* ------------------------------- bootstrap toasts */
  .message-container {
-     position: right;
+     position: fixed;
      top: 72px;
      right: 15px;
      z-index: 99999999999;
