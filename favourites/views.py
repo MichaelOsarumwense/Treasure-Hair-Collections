@@ -14,24 +14,18 @@ If the Product is not in favourite then save it as favourite
 """
 @login_required
 def view_fav(request):
-    """A View that renders the cart contents page"""
-    print("==============")
-    print(request.user)
-    print(Favourites.objects.all())
-    favourite_products = Favourites.objects.filter(user=request.user)
-    print(favourite_products)
-    return render(request, 'favourite.html', {"favourite_products": favourite_products })
 
-    # return render(request, "favourite.html")
+    favourite_products = Product.objects.filter(favourite=request.user)
+
+    return render(request, 'favourite.html',
+                  {"favourite_products": favourite_products})
+
 
 @login_required
 def add_remove_favourites(request, id):
 
-    # Youtube
-    product = get_object_or_404(Product,pk=id)
-    # import pdb
-    # pdb.set_trace()
-    print('userId: {0}, in fav {1}'.format(request.user.id, product.favourite.filter(id=request.user.id).exists()))
+    product = get_object_or_404(Product, pk=id)
+
     if product.favourite.filter(id=request.user.id).exists():
         product.favourite.remove(request.user)
     else:
