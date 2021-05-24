@@ -4,7 +4,7 @@
 
 Milestone Project - 4
 The live website can be viewed [here](https://treasures-hair-collections.herokuapp.com/)      
-<img src="https://imgur.com/bMpHq8D.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://i.imgur.com/30Sqa1l.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
 
 This is the last milestone project for the Fullstack Web Developer course with Code Institute. The aim of the project is to showcase my skills learnt throughout this course. 
 

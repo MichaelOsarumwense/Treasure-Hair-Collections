@@ -8,5 +8,3 @@ class TestBagViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "bag/bag.html")
         self.assertTemplateUsed(response, "base.html")
-        self.assertTemplateUsed(response, "includes/mobile-top-header.html")
-        self.assertTemplateUsed(response, "includes/main-nav.html")
