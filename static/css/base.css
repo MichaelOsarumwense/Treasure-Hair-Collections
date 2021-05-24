@@ -615,3 +615,28 @@ footer ul {
          background:black;
     }
 }
+
+ /*-- Favourite--*/
+ .fav-form button:focus,
+ .fav-form button:active {
+   outline: none;
+ }
+.fav-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+}
+/*------ Contact Page ------*/
+.contact-container {
+  border: thistle;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+/*----- Accounts app --------*/
+ a.blue-link {
+   text-decoration: none;
+   color: rgb(0, 128, 129);
+ }
