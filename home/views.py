@@ -1,15 +1,22 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail
-from django.utils import timezone
-from django.conf import settings
 from .forms import ContactForm
-from django.contrib import auth, messages
+from django.contrib import messages
+from products.models import Product
 
 
-def index(request):
-    """ A View to return the index page """
+def view_index(request):
+    """ Renders home page with 4 random featured products
+        in featured listing section """
 
-    return render(request, 'home/index.html')
+    featured_products = Product.objects.filter(featured=True).order_by('?')[:4]
+    bestseller = Product.objects.filter(bestseller=True)
+    context = {
+        'featured_products': featured_products,
+        'bestseller': bestseller,
+        'category': 'All products'
+    }
+    return render(request, "home/index.html", context)
 
 
 def view_about(request):
