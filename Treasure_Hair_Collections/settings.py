@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_forms_bootstrap',
 
     'allauth',
     'allauth.account',
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'favourites',
+    'search',
 
     # external_apps
     'crispy_forms',
@@ -85,6 +88,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
+
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
