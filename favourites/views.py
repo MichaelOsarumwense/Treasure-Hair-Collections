@@ -12,6 +12,8 @@ If the Product is not in favourite then save it as favourite
 """
 @login_required so only authenticated users can have favourites list of products
 """
+
+
 @login_required
 def view_fav(request):
 
