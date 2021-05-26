@@ -1,5 +1,7 @@
 from django import template
 register = template.Library()
+
+
 @register.filter
 def is_user_in_fav(user, favourites):
     """[summary]
