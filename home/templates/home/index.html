@@ -44,14 +44,14 @@
                  <div class="col-xs-12 col-md-6 col-lg-3 mx-auto featured-card">
                     <div class="card" style="width: 17rem;">
                          <a href="{% url 'product_detail' product.id %}"  class="product-image">
-                             <img class="card-img"src="{{MEDIA_URL}}{{product.image}}" class="card-img-top product-image" alt="{{product.name}}" />
+                             <img class="card-img card-img-top product-image" src="{{MEDIA_URL}}{{product.image}}" alt="{{product.name}}" />
                             </a>
                             <div class="overlay"></div>
                              {% if product.bestseller %}
                              <div class="product-label text-center">Bestseller</div>
                              {% endif %}
                              <div class="card-body product-details">
-                             <h6 class="card-title product-name"><a href="{% url 'product_detail' product.id %}"  class="product-title">{{ product.name }}</a></h6>
+                             <h6 class="card-title product-name product-title"><a  id="featured" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
                          
                              <p class="product-price">$ {{ product.price }}</p>
                          </div>
@@ -92,7 +92,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">    
           <div class="card mt-2 brand-card">    
             <a href="{% url 'products' %}?category=brazilian_hair">
-            <img class="card-img-top pt-2" src="{% static 'img/brazillian.jpg' %}" alt={{product.name}}></a>
+            <img class="card-img-top pt-2" src="{% static 'img/brazillian.jpg' %}" alt="brazilian_hair"></a>
              <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Brazillian</h5>
@@ -103,7 +103,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card mt-2 brand-card">
             <a href="{% url 'products' %}?category=human_bob_hair">
-            <img class="card-img-top pt-2" src="{% static 'img/bobhair.jpg' %}" alt="Card image cap"></a>
+            <img class="card-img-top pt-2" src="{% static 'img/bobhair.jpg' %}" alt="human_bob_hair"></a>
             <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Human</h5>
@@ -114,7 +114,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card mt-2 brand-card">
             <a href="{% url 'products' %}?category=wigs">
-            <img class="card-img-top pt-2" src="{% static 'img/wig.jpg' %}" alt="Card image cap"></a>
+            <img class="card-img-top pt-2" src="{% static 'img/wig.jpg' %}" alt="wigs"></a>
             <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Wigs</h5>
@@ -125,7 +125,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
           <div class="card mt-2 brand-card">
             <a href="{% url 'products' %}?category=weavon">
-            <img class="card-img-top pt-2" src="{% static 'img/weavon.jpg' %}" alt="Card image cap"></a>
+            <img class="card-img-top pt-2" src="{% static 'img/weavon.jpg' %}" alt="Weavons"></a>
             <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Weavons</h5>
@@ -136,7 +136,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
           <div class="card mt-2 brand-card">
             <a href="{% url 'products' %}?category=braids">
-            <img class="card-img-top pt-2" src="{% static 'img/braids.jpg' %}" alt="Card image cap"></a>
+            <img class="card-img-top pt-2" src="{% static 'img/braids.jpg' %}" alt="braids"></a>
             <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Braids</h5>
@@ -147,7 +147,7 @@
       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="card mt-2 brand-card">
             <a href="{% url 'products' %}?category=dreads">
-            <img class="card-img-top pt-2" src="{% static 'img/dreads.jpg' %}" alt="Card image cap"></a>
+            <img class="card-img-top pt-2" src="{% static 'img/dreads.jpg' %}" alt="dreads"></a>
             <div class="overlay"></div>
             <div class="card-body">
               <h5 class="card-title text-center pt-2">Dreads</h5>
