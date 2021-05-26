@@ -1,44 +1,48 @@
+{% load static %}
+
 <!--Footer-->
-<div class="container-fluid bg-black text-white" style="padding-top: 50px;">
-    <!--Desktop only footer section-->
-<div class="row text-center footer-top d-none d-lg-flex px-3">
 
-
-        <div class="col-12 text-center">
-            <h4 class="uppercase mb-3">Contact&nbsp;Us</h4>
-            <p><i class="fas fa-map-marker-alt mr-3 icon-green"></i>
-            Kingswood Estate, Dulwich Village, 
-            <br/>London, United Kingdom </p>
-            <p><i class="fas fa-phone-alt mr-3 icon-green"></i><a href="tel:+1234567890" class="email-phone-link text-white" > +44 123 456 78</a></p>
-            <p><i class="fas fa-envelope mr-3 icon-green"></i><a href="mailto:treasure.hair.collections@gmail.com?subject=Treasures-Hair" class="email-phone-link text-white"> treasure.hair.collections@gmail.com</a></p>
-        </div>
-
-    </div>
-    <!--Bottom main footer-->
-    <div class="row main-footer py-3 py-lg-2">
-        <div class="col-12 container text-center">
-            <a href="https://github.com/MichaelOsarumwense/Treasure_Hair_Collections" target="_blank" 
-                rel="noopener" class="icon-footer-container">Github
-                <i class="fab fa-github media-icons" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/michael-osarumwense-626b30100/" target="_blank"
-                 rel="noopener" class="icon-footer-container">Linkedin
-                <i class="fab fa-linkedin-in media-icons" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" 
-                class="icon-footer-container">Instagram
-                <i class="fab fa-instagram media-icons" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                 class="icon-footer-container">Facebook
-                <i class="fab fa-facebook media-icons" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="col-12 text-center">
-            <small> For educational purposes only | © 2021 
-                <a href="https://github.com/MichaelOsarumwense" rel="noreferrer"
-                target="_blank" class="author-link">Michael&nbsp;Osarumwense</a>
-              </small>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+          <div class="container mx-auto text-white">
+              <div class="row">
+                  <div class="col-12 text-center footer-heading">
+                      <h3 class="highlight">Your one stop online shop for quality hair</h3>
+                      <p class="highlight">10,000 Sold</p>
+                  </div>
+                <div class="col-sm-12 col-md-4 footer-img">
+                    <a href="#"> <img src="{% static 'img/footer.jpeg' %}"></a>
+                </div>
+              
+                    <div class="col-sm-12 col-md-4 footer-links">
+                      <h5 class="highlight">TH-Collections</h5>
+                        <ul>
+                            <li><a href="{% url 'home'%}">Home</a></li>
+                            <li><a href="{% url 'products' %}">Products</a></li>
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                          </ul>
+                          <div class="social-links">
+                              <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                              <a href="https://www.twitter.com/" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                    </div>
+                    
+                        <div class="col-sm-12 col-md-4 service-links">
+                          <h6 class= "highlight">Services</h6>
+                          <ul>
+                              <li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+                              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                  </div>
         </div>
     </div>
-</div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center copyright">
+      <p>© 2021 TH-Collections</p>
+    </div>
+  </div>

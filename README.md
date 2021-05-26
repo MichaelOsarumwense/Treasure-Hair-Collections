@@ -1,10 +1,10 @@
 # [Treasures Hair Collections](https://treasures-hair-collections.herokuapp.com/)
 
-[![Build Status](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections.png?branch=master)](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections)  
+[![Build Status](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections.svg?branch=master)](https://travis-ci.com/MichaelOsarumwense/Treasure_Hair_Collections)  
 
 Milestone Project - 4
 The live website can be viewed [here](https://treasures-hair-collections.herokuapp.com/)      
-<img src="https://imgur.com/bMpHq8D.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
+<img src="https://i.imgur.com/30Sqa1l.jpg" alt="mockup" target="_blank" rel="noopener" width="850">
 
 This is the last milestone project for the Fullstack Web Developer course with Code Institute. The aim of the project is to showcase my skills learnt throughout this course. 
 
@@ -462,7 +462,7 @@ python manage.py runserver.
 
 ### Heroku Deployment
 
-    To deploy TickTock  to heroku, take the following steps:
+    To deploy to heroku, take the following steps:
 
 1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
 
@@ -510,9 +510,8 @@ All the product details, images and the contents for the services and policies a
 
 **Tutorials**
 
-* [Python Django Tutorial by Corey Schafer](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-
 * The [Django documentation](https://devdocs.io/django~1.11/)
+* The [Code Institute Full Stack Framework with Django](https://learn.codeinstitute.net/)
 
 ### Acknowledgement
 The tutors, mentors and support staff at Code Institute

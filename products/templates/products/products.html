@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% load static %}
+
+{% load is_user_in_fav %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,11 +14,41 @@
 {% endblock %}
 
 {% block content %}
+
+<!--Promotion banner -->
+<section class = "container-fluid delivery-banner">
+    <div class = "row">
+      <div class = "col-12 text-center text-white banner">
+        <i class ="pt-1 fas fa-truck" style="color:rgb(0, 128, 129);"></i>
+        <p class = ban-text>Free Next Day Delivery Over €100</p>
+      </div>
+    </div>
+</section>
+
+<!--Category-->
+<section class="container-fluid category-list mt-5" >
+    <div class="col-12 text-center">
+        <a style="color: black;" style="color: black;" href="{% url 'products' %}?category=hair_spray,hair_dryers" class="btn btn-hover">Deals</a>
+        <a style="color: black;" href="{% url 'products' %}?category=new_arrivals" class="btn btn-hover">New Arrivals</a> 
+        <div class="dropdown" style="display:inline-block">
+        <a style="color: black;" href="{% url 'products' %}" class="btn dropbtn btn-hover">Collections</a>
+        <div class="dropdown-content">
+      <a class="dropdown-item" href="{% url 'products' %}?category=human_bob_hair">Human Bob Hair</a>
+          <a href="{% url 'products' %}?category=brazilian_hair">Brazilian Hair</a>
+          <a href="{% url 'products' %}?category=wigs">Wigs</a>
+          <a href="{% url 'products' %}?category=weavon">Weavon</a>
+          <a href="{% url 'products' %}?category=braids">Braids</a>
+          <a href="{% url 'products' %}?category=dreads">Dreads</a>
+        </div>
+        </div>
+    </div>
+</section>
+
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font" id="logo-font">Products</h2>
+                
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -53,9 +87,21 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                            <div class="card" style="width: 17rem;"> 
+                        <!-- form to add/remove products to the favourites list -->
+                        <form class="text-right fav-form" method="POST" action="{% url 'add_remove_favourites' product.id %}">
+                            {% csrf_token %}
+                            <button class="fav-button" type="submit">
+                                <!-- check if the product is already a favourite -->
+                                {% if user|is_user_in_fav:product.favourite %}
+                                <span class="favorited text-right"><i class="fas fa-heart fa-lg" style="color:rgb(0, 128, 129)"></i></span>            
+                                {% else %}
+                                <span class="favorite text-right"><i class="far fa-heart fa-lg" style="color:rgb(0, 128, 129)"></i></span>      
+                                {% endif %}
+                            </button>
+                        </form>
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a class="product-image" href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
@@ -122,6 +168,30 @@
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
+    <!-- Pagination to display 8 products per page -->       
+<section class="pagination-cotainer my-4">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="pagination justify-content-center">
+                    <span class="step-links">
+                {% if products.has_previous %}
+                <a class="pagination-space" href="?page=1">&laquo; first</a>
+                <a class="pagination-space" href="?page={{ products.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current pagination-space">
+                Page {{ products.number }} of {{ products.paginator.num_pages }}.
+                </span> 
+                {% if products.has_next %}
+                <a class="pagination-space" href="?page={{ products.next_page_number }}">next</a>
+                <a href="?page={{ products.paginator.num_pages }}">last &raquo;</a> {% endif %}
+                </span>
+            </div>
+        </div>
+     </div>
+  </div>
+</section>
 {% endblock %}
 
 {% block postloadjs %}
