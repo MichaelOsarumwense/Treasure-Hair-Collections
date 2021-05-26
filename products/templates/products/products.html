@@ -87,7 +87,7 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card" style="width: 17rem;"> 
+                            <div class="card" style="width: 16rem;"> 
                         <!-- form to add/remove products to the favourites list -->
                         <form class="text-right fav-form" method="POST" action="{% url 'add_remove_favourites' product.id %}">
                             {% csrf_token %}
