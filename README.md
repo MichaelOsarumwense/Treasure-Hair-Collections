@@ -167,7 +167,13 @@ If there is an error with the payment, the user will be notified with an error m
 
 The Profile page gives registered users that are signed in the ability to view/update their profile information as well as see their order history.
 
-### Search
+### Favourite App
+
+**profile.html**
+
+The Favourite page gives registered users that are signed in the ability to view, add or remove products to favorites. The user can a product to favourites and the user can navigate to favourites page to view the list of favourite iten.
+
+### Search App
 
 This will allow the user to search for a product based on the title or category.
 
@@ -199,7 +205,7 @@ The footer features on every page through out the application.
 
 The footer background is dark to give a contrast and obvious separation between the footer and the rest of the page content.
 
-The footer has a mixture of black and light black in a gradient.
+The footer has a link to access the contact page, about page and the FAQS.
 
 The footer has a link to the social media handles and contact information.
 
@@ -210,10 +216,6 @@ At the bootom of the footer is copyright information.
 1. The ability for customers to add reviews.
 2. Checkout pages to include a field for customer to get delivery charges.
 3. The ability for users to view, agree and decline terms and condition.
-
-## Features Not Implemented
-
-1. Contact Page: I opted out of creating a contact page as most modern site provides users with contact details and modern users prefer to send a personal email or make a direct phone contact. The user however has the ability to click on the email icon and will be opened up in their mailbox with a predetrmined subject and contact email filled out.
 
 ---
 
