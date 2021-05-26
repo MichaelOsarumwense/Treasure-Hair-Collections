@@ -622,6 +622,10 @@ footer ul {
     }
 }
 
+.main {
+  margin-top: 80px; /* Add a top margin to avoid content overlay */
+}
+
  /*-- Favourite--*/
  .fav-form button:focus,
  .fav-form button:active {
