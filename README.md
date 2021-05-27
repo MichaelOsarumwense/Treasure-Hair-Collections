@@ -313,9 +313,9 @@ Desktop - Firefox v.67
 
 1. Fixed a bug where App Failed to start due to a missing demacting comma on the app section in settings.py, **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/8e0ba40a0a8464baa8a762e1543c7aaf9b2be725)**
 2. Fixed a bug with a typo in procfile. **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/9a36a8ae27b2ae157df1373d40838f4e7c88443a)**
-3. fixed a bug where alluth templates were not extending base.html and static dir **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/fa624a948f810abe52691853cd3b0c1687469a61)**.
-   4.Fixed a bug where bags displayed on profile after update **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/f61222de4edbb40072c0a2aeb04cf83452320b77)**
-
+3. fixed a bug where alluth templates were not extending base.html and static dir **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/fa624a948f810abe52691853cd3b0c1687469a61)**
+4. Fixed a bug where bags displayed on profile after update **[see](https://github.com/MichaelOsarumwense/Treasure_Hair_Collections/commit/f61222de4edbb40072c0a2aeb04cf83452320b77)**
+5. Fixed a redirect bug where the app crashes due too many redirects after a user authenticates before adding a product to favoutites.
 ---
 
 ### GitHub Repository

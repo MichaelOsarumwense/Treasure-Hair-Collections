@@ -23,14 +23,16 @@ def view_fav(request):
                   {"favourite_products": favourite_products})
 
 
-@login_required
 def add_remove_favourites(request, id):
 
     product = get_object_or_404(Product, pk=id)
-
-    if product.favourite.filter(id=request.user.id).exists():
-        product.favourite.remove(request.user)
+    
+    if request.user.is_authenticated:
+        if product.favourite.filter(id=request.user.id).exists():
+            product.favourite.remove(request.user)
+        else:
+            product.favourite.add(request.user)
+        product.save()
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
-        product.favourite.add(request.user)
-    product.save()
-    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+        return redirect(reverse('account_login'))
